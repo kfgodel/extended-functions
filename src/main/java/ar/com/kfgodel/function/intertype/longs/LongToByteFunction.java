@@ -5,12 +5,12 @@ import java.util.function.Function;
 /**
  * Date: 29/07/17 - 19:57
  */
-public interface LongToByteFunction extends Function<Integer, Byte> {
+public interface LongToByteFunction extends Function<Long, Byte> {
 
   byte apply(long input);
 
   @Override
-  default Byte apply(Integer input){
-    return apply(input.intValue());
+  default Byte apply(Long input){
+    return apply(input.longValue());
   }
 }

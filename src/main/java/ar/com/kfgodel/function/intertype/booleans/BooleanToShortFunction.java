@@ -5,12 +5,12 @@ import java.util.function.Function;
 /**
  * Date: 29/07/17 - 19:57
  */
-public interface BooleanToShortFunction extends Function<Integer, Short> {
+public interface BooleanToShortFunction extends Function<Boolean, Short> {
 
   short apply(boolean input);
 
   @Override
-  default Short apply(Integer input){
-    return apply(input.intValue());
+  default Short apply(Boolean input){
+    return apply(input.booleanValue());
   }
 }

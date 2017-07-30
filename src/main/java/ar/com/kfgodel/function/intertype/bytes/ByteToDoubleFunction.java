@@ -5,12 +5,12 @@ import java.util.function.Function;
 /**
  * Date: 29/07/17 - 19:57
  */
-public interface ByteToDoubleFunction extends Function<Integer, Double> {
+public interface ByteToDoubleFunction extends Function<Byte, Double> {
 
   double apply(byte input);
 
   @Override
-  default Double apply(Integer input){
-    return apply(input.intValue());
+  default Double apply(Byte input){
+    return apply(input.byteValue());
   }
 }

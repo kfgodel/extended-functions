@@ -5,13 +5,13 @@ import java.util.function.Function;
 /**
  * Created by kfgodel on 23/07/17.
  */
-public interface ShortToBooleanFunction extends Function<Integer, Boolean> {
+public interface ShortToBooleanFunction extends Function<Short, Boolean> {
 
   boolean apply(short aBoolean);
 
   @Override
-  default Boolean apply(Integer aBoolean){
-    return this.apply(aBoolean.intValue());
+  default Boolean apply(Short aBoolean){
+    return this.apply(aBoolean.shortValue());
   }
 
 }

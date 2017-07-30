@@ -5,12 +5,12 @@ import java.util.function.Function;
 /**
  * Date: 29/07/17 - 19:57
  */
-public interface ShortToFloatFunction extends Function<Integer, Float> {
+public interface ShortToFloatFunction extends Function<Short, Float> {
 
   float apply(short input);
 
   @Override
-  default Float apply(Integer input){
-    return apply(input.intValue());
+  default Float apply(Short input){
+    return apply(input.shortValue());
   }
 }

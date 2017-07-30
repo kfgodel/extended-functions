@@ -5,12 +5,12 @@ import java.util.function.Function;
 /**
  * Date: 29/07/17 - 19:57
  */
-public interface ShortToLongFunction extends Function<Integer, Long> {
+public interface ShortToLongFunction extends Function<Short, Long> {
 
   long apply(short input);
 
   @Override
-  default Long apply(Integer input){
-    return apply(input.intValue());
+  default Long apply(Short input){
+    return apply(input.shortValue());
   }
 }

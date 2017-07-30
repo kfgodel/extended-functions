@@ -5,12 +5,12 @@ import java.util.function.Function;
 /**
  * Date: 29/07/17 - 19:57
  */
-public interface LongToCharFunction extends Function<Integer, Character> {
+public interface LongToCharFunction extends Function<Long, Character> {
 
   char apply(long input);
 
   @Override
-  default Character apply(Integer input){
-    return apply(input.intValue());
+  default Character apply(Long input){
+    return apply(input.longValue());
   }
 }

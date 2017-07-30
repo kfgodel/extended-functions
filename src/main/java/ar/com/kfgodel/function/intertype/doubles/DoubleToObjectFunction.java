@@ -5,12 +5,12 @@ import java.util.function.Function;
 /**
  * Date: 29/07/17 - 19:57
  */
-public interface DoubleToObjectFunction<T> extends Function<Integer, T> {
+public interface DoubleToObjectFunction<T> extends Function<Double, T> {
 
   T apply(double input);
 
   @Override
-  default T apply(Integer input){
-    return apply(input.intValue());
+  default T apply(Double input){
+    return apply(input.doubleValue());
   }
 }

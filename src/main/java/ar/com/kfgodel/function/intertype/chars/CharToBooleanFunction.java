@@ -5,13 +5,13 @@ import java.util.function.Function;
 /**
  * Created by kfgodel on 23/07/17.
  */
-public interface CharToBooleanFunction extends Function<Integer, Boolean> {
+public interface CharToBooleanFunction extends Function<Character, Boolean> {
 
   boolean apply(char aBoolean);
 
   @Override
-  default Boolean apply(Integer aBoolean){
-    return this.apply(aBoolean.intValue());
+  default Boolean apply(Character aBoolean){
+    return this.apply(aBoolean.charValue());
   }
 
 }

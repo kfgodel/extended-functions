@@ -5,12 +5,12 @@ import java.util.function.Function;
 /**
  * Date: 29/07/17 - 19:57
  */
-public interface CharToShortFunction extends Function<Integer, Short> {
+public interface CharToShortFunction extends Function<Character, Short> {
 
   short apply(char input);
 
   @Override
-  default Short apply(Integer input){
-    return apply(input.intValue());
+  default Short apply(Character input){
+    return apply(input.charValue());
   }
 }

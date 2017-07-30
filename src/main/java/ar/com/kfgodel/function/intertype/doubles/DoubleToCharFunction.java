@@ -5,12 +5,12 @@ import java.util.function.Function;
 /**
  * Date: 29/07/17 - 19:57
  */
-public interface DoubleToCharFunction extends Function<Integer, Character> {
+public interface DoubleToCharFunction extends Function<Double, Character> {
 
   char apply(double input);
 
   @Override
-  default Character apply(Integer input){
-    return apply(input.intValue());
+  default Character apply(Double input){
+    return apply(input.doubleValue());
   }
 }

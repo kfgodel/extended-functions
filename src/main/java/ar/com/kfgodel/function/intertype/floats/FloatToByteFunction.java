@@ -5,12 +5,12 @@ import java.util.function.Function;
 /**
  * Date: 29/07/17 - 19:57
  */
-public interface FloatToByteFunction extends Function<Integer, Byte> {
+public interface FloatToByteFunction extends Function<Float, Byte> {
 
   byte apply(float input);
 
   @Override
-  default Byte apply(Integer input){
-    return apply(input.intValue());
+  default Byte apply(Float input){
+    return apply(input.floatValue());
   }
 }

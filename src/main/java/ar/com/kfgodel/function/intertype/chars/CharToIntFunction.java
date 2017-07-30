@@ -5,12 +5,12 @@ import java.util.function.Function;
 /**
  * Date: 29/07/17 - 19:57
  */
-public interface CharToIntFunction extends Function<Integer, Integer> {
+public interface CharToIntFunction extends Function<Character, Integer> {
 
   int apply(char input);
 
   @Override
-  default Integer apply(Integer input){
-    return apply(input.intValue());
+  default Integer apply(Character input){
+    return apply(input.charValue());
   }
 }

@@ -5,12 +5,12 @@ import java.util.function.Function;
 /**
  * Date: 29/07/17 - 19:57
  */
-public interface BooleanToFloatFunction extends Function<Integer, Float> {
+public interface BooleanToFloatFunction extends Function<Boolean, Float> {
 
   float apply(boolean input);
 
   @Override
-  default Float apply(Integer input){
-    return apply(input.intValue());
+  default Float apply(Boolean input){
+    return apply(input.booleanValue());
   }
 }

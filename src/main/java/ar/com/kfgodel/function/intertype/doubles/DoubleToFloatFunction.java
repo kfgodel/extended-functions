@@ -5,12 +5,12 @@ import java.util.function.Function;
 /**
  * Date: 29/07/17 - 19:57
  */
-public interface DoubleToFloatFunction extends Function<Integer, Float> {
+public interface DoubleToFloatFunction extends Function<Double, Float> {
 
   float apply(double input);
 
   @Override
-  default Float apply(Integer input){
-    return apply(input.intValue());
+  default Float apply(Double input){
+    return apply(input.doubleValue());
   }
 }
