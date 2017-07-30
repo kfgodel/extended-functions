@@ -16,7 +16,7 @@
 		</encoder>
 	</appender>
   
-	<logger name="ar.com.kfgodel.primitons" level="DEBUG" />
+	<logger name="ar.com.kfgodel.function" level="DEBUG" />
 	
 	<root level="info">
 	  <appender-ref ref="STDOUT" />
