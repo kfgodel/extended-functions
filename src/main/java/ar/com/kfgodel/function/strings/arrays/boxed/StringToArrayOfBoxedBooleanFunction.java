@@ -5,6 +5,6 @@ import ar.com.kfgodel.function.strings.arrays.StringToArrayOfObjectFunction;
 /**
  * Date: 29/07/17 - 19:57
  */
-public interface StringToArrayOfBoxedBooleanFunction<I> extends StringToArrayOfObjectFunction<Boolean> {
+public interface StringToArrayOfBoxedBooleanFunction extends StringToArrayOfObjectFunction<Boolean> {
 
 }

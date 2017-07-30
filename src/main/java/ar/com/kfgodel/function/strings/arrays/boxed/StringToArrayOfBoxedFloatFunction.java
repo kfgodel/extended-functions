@@ -5,6 +5,6 @@ import ar.com.kfgodel.function.strings.arrays.StringToArrayOfObjectFunction;
 /**
  * Date: 29/07/17 - 19:57
  */
-public interface StringToArrayOfBoxedFloatFunction<I> extends StringToArrayOfObjectFunction<Float> {
+public interface StringToArrayOfBoxedFloatFunction extends StringToArrayOfObjectFunction<Float> {
 
 }
