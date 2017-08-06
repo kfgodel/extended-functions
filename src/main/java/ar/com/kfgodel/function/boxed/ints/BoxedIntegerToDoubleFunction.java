@@ -1,10 +1,10 @@
 package ar.com.kfgodel.function.boxed.ints;
 
-import ar.com.kfgodel.function.objects.ObjectToFloatFunction;
+import ar.com.kfgodel.function.objects.ObjectToDoubleFunction;
 
 /**
  * Date: 29/07/17 - 19:57
  */
-public interface BoxedIntegerToDoubleFunction extends ObjectToFloatFunction<Integer> {
+public interface BoxedIntegerToDoubleFunction extends ObjectToDoubleFunction<Integer> {
 
 }
