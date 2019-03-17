@@ -1,47 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
 
-  <parent>
-    <groupId>ar.com.kfgodel</groupId>
-    <artifactId>java-pom</artifactId>
-    <version>0.1-SNAPSHOT</version>
-  </parent>
-
-  <groupId>ar.com.kfgodel</groupId>
   <artifactId>extended-functions</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
+  <parent>
+    <groupId>info.kfgodel</groupId>
+    <artifactId>java-pom</artifactId>
+    <version>0.1.5</version>
+  </parent>
+
   <name>Extended Functions</name>
   <description>Java project to add additional interfaces to those of functional Java</description>
+  <url>https://github.com/kfgodel/extended-functions</url>
+
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
 
   <scm>
-    <connection>scm:git:ssh://github.com/kfgodel/extended-functions.git</connection>
     <developerConnection>scm:git:ssh://github.com/kfgodel/extended-functions.git</developerConnection>
-    <url>https://github.com/kfgodel/extended-functions</url>
+    <connection>${project.scm.developerConnection}</connection>
+    <url>${project.url}</url>
   </scm>
 
   <properties>
   </properties>
 
-  <repositories>
-    <repository>
-      <id>kfgodel_mosquito</id>
-      <name>Repo Mosquito</name>
-      <url>http://kfgodel.info:8081/nexus/content/groups/public/</url>
-    </repository>
-  </repositories>
-
-
   <dependencies>
 
     <!-- Rspec like testing -->
     <dependency>
-      <groupId>ar.com.dgarcia</groupId>
+      <groupId>info.kfgodel</groupId>
       <artifactId>java-spec</artifactId>
+      <version>${version.javaspec}</version>
+      <scope>test</scope>
     </dependency>
 
   </dependencies>
+
+  <developers>
+    <developer>
+      <id>dlgarcia</id>
+      <name>Dario L Garcia</name>
+      <email>dario.garcia@10pines.com</email>
+      <organization>10Pines SRL</organization>
+      <organizationUrl>https://www.10pines.com/</organizationUrl>
+      <roles>
+        <role>architect</role>
+        <role>developer</role>
+      </roles>
+    </developer>
+  </developers>
 
 </project>
