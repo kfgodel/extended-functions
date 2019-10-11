@@ -4,13 +4,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
 
+  <groupId>info.kfgodel</groupId>
   <artifactId>extended-functions</artifactId>
-  <version>0.0.2-SNAPSHOT</version>
+  <version>0.0.2</version>
 
   <parent>
     <groupId>info.kfgodel</groupId>
     <artifactId>java-pom</artifactId>
-    <version>0.1.6</version>
+    <version>0.1.7</version>
   </parent>
 
   <name>Extended Functions</name>
@@ -41,9 +42,7 @@
     <!-- Rspec like testing -->
     <dependency>
       <groupId>info.kfgodel</groupId>
-      <artifactId>java-spec</artifactId>
-      <version>${version.javaspec}</version>
-      <scope>test</scope>
+      <artifactId>jspek</artifactId>
     </dependency>
 
   </dependencies>
